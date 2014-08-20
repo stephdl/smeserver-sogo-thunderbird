@@ -8,7 +8,7 @@
 
 Name:		smeserver-sogo-thunderbird
 Version:	1.0.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	SME Server SOGo Thunderbird Integrator
 
 Group:		Networking/Daemons

@@ -28,9 +28,9 @@ Source0:	%{name}-%{version}.tar.gz
 #Source16:	lightning-1.9.1_win32.xpi
 Source17:       sogo-integrator-%{vintegrator24}-sogo-demo.xpi
 Source18:       sogo-connector-24.0.6.xpi
-Source19:	lightning-2.6.6-sm+tb-linux.xpi
-Source20:	lightning-2.6.6-sm+tb-mac.xpi
-Source21:	lightning-2.6.6-sm+tb-windows.xpi
+Source19:	lightning-2.6.6-tb+sm-linux.xpi
+Source20:	lightning-2.6.6-tb+sm-mac.xpi
+Source21:	lightning-2.6.6-tb+sm-windows.xpi
 
 BuildArch:	noarch
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)

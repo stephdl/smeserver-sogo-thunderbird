@@ -1,6 +1,6 @@
 # $Id$
 
-%{!?_with_smesetup:%define _with_smesetup %(echo %{?dist} | %{__grep} -c -e nh\$)}
+#%{!?_with_smesetup:%define _with_smesetup %(echo %{?dist} | %{__grep} -c -e nh\$)}
 
 #%define vintegrator10	10.0.3
 #%define vintegrator17   17.0.3
@@ -99,7 +99,7 @@ echo "%ghost /home/httpd/html/sogo/thunderbird24/sogo-integrator-%{vintegrator24
 rm -rf $RPM_BUILD_ROOT
 
 
-%if %{_with_smesetup}
+#%if %{_with_smesetup}
 %pre
 [ -h /home/sogo ] && rm -f /home/sogo || : 
 
@@ -115,7 +115,7 @@ if [ $1 = 1 ]; then
     /etc/e-smith/events/actions/initialize-default-databases &> /dev/null
     /sbin/e-smith/signal-event sogo-thunderbird-update
 fi
-%endif
+#%endif
 
 
 %files -f %{name}-%{version}-%{release}-filelist

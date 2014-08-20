@@ -72,7 +72,8 @@ install -m 644 %{SOURCE21} $SOGOEXT_BASE/thunderbird24/WINNT_x86-msvc/lightning-
 
 
 %build
-[ -x createlinks ] && ./createlinks
+#[ -x createlinks ] && ./createlinks
+perl createlinks
 
 
 %install
